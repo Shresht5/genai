@@ -1,3 +1,9 @@
 langchain
 langchain-mistralai
 fastapi[standard]
+transformers
+langchain-huggingface
+torch
+accelerate
+python-dotenv
+huggingface-hub
