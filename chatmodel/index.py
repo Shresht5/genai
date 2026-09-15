@@ -1,8 +1,8 @@
 import langchain
 from fastapi import FastAPI
 from typing import Union
-from dotenv import load_dotenv
 from langchain_huggingface import ChatHuggingFace, HuggingFaceEndpoint
+from dotenv import load_dotenv
 
 load_dotenv()
 
