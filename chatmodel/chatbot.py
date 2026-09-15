@@ -5,7 +5,7 @@ logging.set_verbosity_error()
 from dotenv import load_dotenv
 
 load_dotenv()
-from langchain_core.messages import HumanMessage, AIMessage
+from langchain_core.messages import HumanMessage, AIMessage,SystemMessage
 from langchain_huggingface import ChatHuggingFace, HuggingFacePipeline
 
 llm = HuggingFacePipeline.from_model_id(
@@ -17,7 +17,7 @@ llm = HuggingFacePipeline.from_model_id(
 )
 model = ChatHuggingFace(llm=llm)
 
-messages=[]
+messages=[SystemMessage(content='you are funny assistent')]
 
 def fix_message(response):
     answer = response.split("<|im_start|>assistant")[-1]
@@ -36,5 +36,5 @@ while True:
     msg=fix_message(res.content)
     print("bot : ",msg)
     messages.append(AIMessage(content=msg))
-    
+
 print(messages)
