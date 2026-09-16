@@ -8,3 +8,6 @@ accelerate
 python-dotenv
 huggingface-hub
 sentence-transformers
+pypdf
+langchain-community
+beautifulsoup4
