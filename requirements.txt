@@ -11,3 +11,5 @@ sentence-transformers
 pypdf
 langchain-community
 beautifulsoup4
+tiktoken
+chromadb
