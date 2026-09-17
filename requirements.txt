@@ -13,3 +13,4 @@ langchain-community
 beautifulsoup4
 tiktoken
 chromadb
+langchain-tavily
