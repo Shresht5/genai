@@ -6,7 +6,7 @@ from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import StrOutputParser
 from langchain.tools import tool
 from langchain_core.messages import HumanMessage
-from rich import print 
+from rich import print #terminal colourfulland pattern
 
 #1 creating a tool 
 
